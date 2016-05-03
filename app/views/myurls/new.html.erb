@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Create Shortcut </h1>
+    <%= form_for @myurl do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :Where_To %>
+    <%= f.text_field :togo %>
+    <%= f.submit "Do it!", class: 'Myurl'%>
+    <% end %>
+  </body>
+</html>

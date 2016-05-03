@@ -1,0 +1,9 @@
+<h1>Index</h1>
+
+<% @myurls.each do |x| %>
+<%= x.id %><br>
+<%= x.name %><br>
+<%= x.togo %><br>
+<%= link_to 'Go To Page', myurl_path(x) %><br>
+<% end %>
+<%= link_to 'Create New Url', new_myurl_path %>
